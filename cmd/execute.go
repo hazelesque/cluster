@@ -3,7 +3,7 @@ package cmd
 import (
 	"strings"
 
-	"github.com/bah2830/cluster/controller"
+	"perforce.hazelesque.uk/depot/cluster/controller"
 	"github.com/spf13/cobra"
 )
 

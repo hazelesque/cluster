@@ -13,7 +13,7 @@ import (
 
 	"gopkg.in/yaml.v2"
 
-	"github.com/bah2830/cluster/service"
+	"perforce.hazelesque.uk/depot/cluster/service"
 	"github.com/boltdb/bolt"
 	"github.com/google/uuid"
 	"github.com/hashicorp/mdns"

@@ -1,0 +1,15 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_binary", "go_library")
+
+go_library(
+    name = "cluster_lib",
+    srcs = ["main.go"],
+    importpath = "perforce.hazelesque.uk/depot/cluster",
+    visibility = ["//visibility:private"],
+    deps = ["//cluster/cmd"],
+)
+
+go_binary(
+    name = "cluster",
+    embed = [":cluster_lib"],
+    visibility = ["//visibility:public"],
+)

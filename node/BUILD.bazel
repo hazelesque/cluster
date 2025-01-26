@@ -1,0 +1,17 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "node",
+    srcs = [
+        "node.go",
+        "service.go",
+    ],
+    importpath = "perforce.hazelesque.uk/depot/cluster/node",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//cluster/service",
+        "@com_github_hashicorp_mdns//:mdns",
+        "@com_github_spf13_viper//:viper",
+        "@org_golang_google_grpc//:grpc",
+    ],
+)

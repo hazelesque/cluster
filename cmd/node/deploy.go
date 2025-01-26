@@ -1,7 +1,7 @@
 package node
 
 import (
-	"github.com/bah2830/cluster/node"
+	"perforce.hazelesque.uk/depot/cluster/node"
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
 )
