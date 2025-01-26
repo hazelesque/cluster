@@ -1,0 +1,19 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "group",
+    srcs = [
+        "add_node.go",
+        "create.go",
+        "delete.go",
+        "details.go",
+        "list.go",
+        "name.go",
+    ],
+    importpath = "perforce.hazelesque.uk/depot/cluster/cmd/group",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//cluster/controller",
+        "@com_github_spf13_cobra//:cobra",
+    ],
+)

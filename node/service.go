@@ -7,7 +7,7 @@ import (
 	"os/exec"
 	"strings"
 
-	"github.com/bah2830/cluster/service"
+	"perforce.hazelesque.uk/depot/cluster/service"
 	"github.com/spf13/viper"
 	"google.golang.org/grpc"
 )

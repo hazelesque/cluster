@@ -1,7 +1,7 @@
 package cmd
 
 import (
-	"github.com/bah2830/cluster/cmd/node"
+	"perforce.hazelesque.uk/depot/cluster/cmd/node"
 	"github.com/spf13/cobra"
 )
 

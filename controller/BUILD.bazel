@@ -1,0 +1,21 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "controller",
+    srcs = [
+        "controller.go",
+        "group.go",
+        "node.go",
+    ],
+    importpath = "perforce.hazelesque.uk/depot/cluster/controller",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//cluster/service",
+        "@com_github_boltdb_bolt//:bolt",
+        "@com_github_google_uuid//:uuid",
+        "@com_github_hashicorp_mdns//:mdns",
+        "@com_github_spf13_viper//:viper",
+        "@in_gopkg_yaml_v2//:yaml_v2",
+        "@org_golang_google_grpc//:grpc",
+    ],
+)

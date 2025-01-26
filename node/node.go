@@ -6,7 +6,7 @@ import (
 	"os"
 	"strings"
 
-	"github.com/bah2830/cluster/service"
+	"perforce.hazelesque.uk/depot/cluster/service"
 	"github.com/hashicorp/mdns"
 	"github.com/spf13/viper"
 )
